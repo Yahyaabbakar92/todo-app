@@ -9,5 +9,7 @@ function addTasks() {
     const listItem = document.createElement("li")
     listItem.textContent = task
     taskList.appendChild(listItem)
+    taskInput.value = ''
+    
 }
 
