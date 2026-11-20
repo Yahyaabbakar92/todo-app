@@ -8,11 +8,11 @@ function addTasks() {
     const task = taskInput.value
     if (task.trim() === "") {
         return
-    } else {
+    } 
     const listItem = document.createElement("li")
     listItem.textContent = task
     taskList.appendChild(listItem)
     taskInput.value = ''
-    }
+    
 }
 
