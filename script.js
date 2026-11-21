@@ -15,6 +15,9 @@ function addTasks() {
     const deleteBtn = document.createElement("button")
     deleteBtn.textContent = "Delete"
     listItem.appendChild(deleteBtn)
+    deleteBtn.addEventListener('click', function () {
+        listItem.remove()
+    })
 
     taskList.appendChild(listItem)
     taskInput.value = ''
