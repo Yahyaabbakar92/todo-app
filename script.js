@@ -11,8 +11,12 @@ function addTasks() {
     } 
     const listItem = document.createElement("li")
     listItem.textContent = task
+
+    const deleteBtn = document.createElement("button")
+    deleteBtn.textContent = "Delete"
+    listItem.appendChild(deleteBtn)
+
     taskList.appendChild(listItem)
     taskInput.value = ''
-    
 }
 
